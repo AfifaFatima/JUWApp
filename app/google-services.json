@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "207649094578",
+    "firebase_url": "https://juwapp-e6e0f-default-rtdb.firebaseio.com",
+    "project_id": "juwapp-e6e0f",
+    "storage_bucket": "juwapp-e6e0f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207649094578:android:e42ebd61d18f36f98342ab",
+        "android_client_info": {
+          "package_name": "com.example.juwapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "207649094578-qn6pi2ollo0f9bhdema7q655pqlfut8b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.juwapp",
+            "certificate_hash": "40ce76db295c89e7a72bf74cf3206962be8240bb"
+          }
+        },
+        {
+          "client_id": "207649094578-pjkjle0ebc2prt2u7ihgon76jk0s5huo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC7u5eC9iEgHEJF_paHlTiQdHYT__esgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "207649094578-pjkjle0ebc2prt2u7ihgon76jk0s5huo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

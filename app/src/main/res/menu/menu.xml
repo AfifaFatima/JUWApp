@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <item
+            android:title="Science">
+
+                <menu>
+                        <item
+                            android:id="@+id/computer_science"
+                            android:title="BSSE/BSCS"
+                            app:showAsAction="ifRoom" />
+
+                        <item
+                            android:id="@+id/zoology"
+                            android:title="Zoology"
+                            app:showAsAction="ifRoom" />
+                        <item
+                            android:id="@+id/mathematics"
+                            android:title="Mathematics"
+                            app:showAsAction="ifRoom" />
+                </menu>/>
+
+        </item>
+
+
+        <item
+            android:title="Social Science">
+                <menu>
+                        <item
+                            android:id="@+id/english"
+                            android:title="English"
+                            app:showAsAction="ifRoom" />
+
+                        <item
+                            android:id="@+id/ir"
+                            android:title="International Relation"
+                            app:showAsAction="ifRoom" />
+                        <item
+                            android:id="@+id/isl"
+                            android:title="Islamic Learning"
+                            app:showAsAction="ifRoom" />
+                </menu>/>
+        </item>
+
+        <item
+            android:title="Pharmacy">
+                <menu>
+                        <item
+                            android:id="@+id/pharmaceutical_chemistry"
+                            android:title="Pharmaceutical Chemistry"
+                            app:showAsAction="ifRoom" />
+
+                        <item
+                            android:id="@+id/pharmacology"
+                            android:title="Pharmacology"
+                            app:showAsAction="ifRoom" />
+                        <item
+                            android:id="@+id/Pharmaceutics"
+                            android:title="Pharmaceutics"
+                            app:showAsAction="ifRoom" />
+                </menu>/>
+        </item>
+
+        <item
+            android:title="Business Administration, Commerce and Economics">
+                <menu>
+                        <item
+                            android:id="@+id/BBA"
+                            android:title="BBA"
+                            app:showAsAction="ifRoom" />
+
+                        <item
+                            android:id="@+id/Economy"
+                            android:title="Economy"
+                            app:showAsAction="ifRoom"
+                            android:icon="@drawable/ic_baseline_policy_24"/>
+                        <item
+                            android:id="@+id/Commerce"
+                            android:title="Commerce"
+                            app:showAsAction="ifRoom"
+                            android:icon="@drawable/ic_baseline_policy_24"/>
+                </menu>/>
+        </item>
+
+        <item
+            android:title="Allied Medical Sciences">
+                <menu>
+                        <item
+                            android:id="@+id/homoeopathy"
+                            android:title="Homoeopathy"
+                            app:showAsAction="ifRoom" />
+
+                        <item
+                            android:id="@+id/EMS"
+                            android:title="Eastern Medicine and Surgery"
+                            app:showAsAction="ifRoom"
+                            android:icon="@drawable/ic_baseline_policy_24"/>
+                        <item
+                            android:id="@+id/physical_therapy"
+                            android:title="Physical Therapy"
+                            app:showAsAction="ifRoom"
+                            android:icon="@drawable/ic_baseline_policy_24"/>
+                </menu>/>
+        </item>
+
+</menu>

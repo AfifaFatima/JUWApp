@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">JUW App</string>
+    <string name="navigator_open">Open nav</string>
+    <string name="navigator_close">Close nav</string>
+    <string name="description">"JUW Auto Lib" a best automated library in the town. It makes the library smart one by organizing the books systematically by author, title and subject.
+        This enables users to search for books quickly and effortlessly. The main reason is that it facilitates students to avoid from being standing in que and searching the books.</string>
+    <string-array name="batch">
+        <item>Select Your Batch</item>
+        <item>2023</item>
+        <item>2022</item>
+        <item>2021</item>
+        <item>2020</item>
+        <item>2019</item>
+        <item>Fall-2019</item>
+    </string-array>
+    <string-array name="depart">
+        <item>Select Your Department</item>
+        <item>Science</item>
+        <item>Social Science</item>
+        <item>Pharmacy</item>
+        <item>Business Administration, Commerce and Economics</item>
+        <item>Allied Medical Sciences</item>
+    </string-array>
+</resources>

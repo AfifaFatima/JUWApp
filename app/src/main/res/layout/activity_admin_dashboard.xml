@@ -6,9 +6,10 @@
     android:layout_height="match_parent"
     android:background="@drawable/foreground_design"
     tools:context=".user.DashboardActivity"
-    tools:openDrawer="start">
+    android:id="@+id/drawer">
 
     <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_bar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"

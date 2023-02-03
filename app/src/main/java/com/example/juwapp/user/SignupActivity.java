@@ -186,10 +186,10 @@ public class SignupActivity extends AppCompatActivity {
                                     if (task.isSuccessful()){
                                         sendUserTokenActivity();
                                         Toast.makeText(SignupActivity.this,"Registration Successful", Toast.LENGTH_LONG).show();
-                                        progressBar.setVisibility(View.VISIBLE);
+                                        progressBar.setVisibility(View.GONE);
                                     }else{
                                         Toast.makeText(SignupActivity.this,"Failed to Register! Try again!", Toast.LENGTH_LONG).show();
-                                        progressBar.setVisibility(View.VISIBLE);
+                                        progressBar.setVisibility(View.GONE);
                                     }
                                 }
 
@@ -202,7 +202,7 @@ public class SignupActivity extends AppCompatActivity {
 
                 }else{
                     Toast.makeText(SignupActivity.this,"Failed to Register! Try again!", Toast.LENGTH_LONG).show();
-                    progressBar.setVisibility(View.VISIBLE);
+                    progressBar.setVisibility(View.GONE);
                 }
             }
         });

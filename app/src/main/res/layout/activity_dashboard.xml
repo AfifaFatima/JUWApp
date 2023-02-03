@@ -2,17 +2,18 @@
 <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".user.DashboardActivity"
-    android:id="@+id/drawer">
+    tools:openDrawer="start">
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav__view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="#D6D6D6"
+        android:fitsSystemWindows="true"
         android:theme="@style/navigationTheme"
         app:headerLayout="@layout/header_layout"
         app:menu="@menu/navigation_menu" />
@@ -23,26 +24,44 @@
         android:layout_height="match_parent"
         android:background="@color/home_background">
 
-        <RelativeLayout
-            android:id="@+id/relativeLayout2"
+
+        <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:padding="20dp"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_height="?actionBarSize"
+            tools:ignore="MissingConstraints">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
             app:layout_constraintTop_toTopOf="parent">
 
 
             <ImageButton
                 android:id="@+id/menu_icon"
                 android:layout_width="50dp"
-                android:onClick="drawerMenu"
                 android:layout_height="50dp"
-                android:layout_centerVertical="true"
-                android:src="@drawable/ic_baseline_menu_24" />
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="JUW AutoLib"
+                android:src="@drawable/ic_baseline_menu_24"
+                app:tint="@color/white" />
 
-        </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/bubblegum_sans"
+                android:text="Dashboard"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -51,13 +70,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:orientation="vertical">
 
                 <RelativeLayout
                     android:id="@+id/relativeLayout4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="75dp">
+                    android:layout_marginTop="65dp">
 
                     <TextView
                         android:id="@+id/app_name"
@@ -67,40 +87,6 @@
                         android:fontFamily="@font/bubblegum_sans"
                         android:text="JUW AutoLib"
                         android:textSize="28sp" />
-
-                    <RelativeLayout
-                        android:id="@+id/relativeLayout5"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:layout_below="@id/app_name"
-                        android:layout_marginLeft="40dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginRight="40dp"
-                        android:layout_marginBottom="20dp"
-                        android:background="@color/white"
-                        android:elevation="8dp">
-
-                        <TextView
-                            android:id="@+id/search_bar"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"
-                            android:layout_marginLeft="15dp"
-                            android:fontFamily="@font/bubblegum_sans"
-                            android:text="Search.."
-                            android:textSize="28sp" />
-
-                        <ImageButton
-                            android:id="@+id/search_btn"
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_alignParentRight="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginRight="15dp"
-                            android:src="@drawable/search" />
-
-                    </RelativeLayout>
-
                 </RelativeLayout>
 
                 <LinearLayout
@@ -313,8 +299,8 @@
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/featured_book_recycler"
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
-                        android:background="@color/home_background"/>
+                        android:layout_height="wrap_content"
+                        android:background="@color/home_background" />
                 </LinearLayout>
 
 

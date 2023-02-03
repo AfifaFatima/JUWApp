@@ -1,7 +1,9 @@
 package com.example.juwapp.user;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -61,9 +63,9 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
         menuIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (drawerLayout.isDrawerVisible(GravityCompat.START))
+                if (drawerLayout.isDrawerVisible(GravityCompat.START)) {
                     drawerLayout.closeDrawer(GravityCompat.START);
-                else drawerLayout.openDrawer(GravityCompat.START);
+                }else {drawerLayout.openDrawer(GravityCompat.START);}
             }
         });
         animateNavigationDrawer();
@@ -138,12 +140,5 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
         adapter = new FeaturedAdapter(featuredList);
 
         featuredR.setAdapter(adapter);
-    }
-
-    public void drawerMenu(View view) {
-
-        if (drawerLayout.isDrawerVisible(GravityCompat.START))
-            drawerLayout.closeDrawer(GravityCompat.START);
-        else drawerLayout.openDrawer(GravityCompat.START);
     }
 }
